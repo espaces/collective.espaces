@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<object name="portal_actions">
+  <object name="site_actions">
+
+    <!-- Only show the Contact form on the site root. -->
+    <object name="contact">
+      <property
+        name="available_expr">python:context.restrictedTraverse('@@plone_portal_state').portal_url() == context.restrictedTraverse('@@plone_portal_state').navigation_root_url()</property>
+    </object> 
+  </object>
+
+  <!-- Ensure user dashboard is rooted to the navigation root. -->
+  <object name="user">
+    <object name="dashboard">
+      <property
+       name="url_expr">string:${globals_view/navigationRootUrl}/dashboard</property>
+    </object>
+  </object>
+
+</object>

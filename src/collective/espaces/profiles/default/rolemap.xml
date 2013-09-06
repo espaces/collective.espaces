@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<rolemap>
+  <permissions>
+    <!-- Prevents people copying others’ data unless they have access. -->
+    <permission name="Copy or Move" acquire="False">
+      <role name="Contributor"/>
+      <role name="Editor"/>
+      <role name="Manager"/>
+      <role name="Owner"/>
+      <role name="Reviewer"/>
+      <role name="Site Administrator"/>
+    </permission>
+
+    <!-- Allow users to manage their own portlets -->
+    <permission name="Portlets: Manage own portlets" acquire="True">
+      <role name="Editor"/>
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="plone.portlet.collection: Add collection portlet" acquire="True">
+      <role name="Editor"/>
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+    <permission name="plone.portlet.static: Add static portlet" acquire="True">
+      <role name="Editor"/>
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
+
+  </permissions>
+</rolemap>

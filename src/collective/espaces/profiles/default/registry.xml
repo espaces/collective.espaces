@@ -1,0 +1,52 @@
+<registry>
+  <!-- Configuration for plone.app.caching
+       We import the existing profile, but need to manually turn caching on.
+  -->
+  <record name="plone.caching.interfaces.ICacheSettings.enabled">
+    <value>True</value>
+  </record>
+  <record name="plone.app.caching.interfaces.IPloneCacheSettings.enableCompression">
+    <value>False</value>
+  </record>
+  <record name="plone.cachepurging.interfaces.ICachePurgingSettings.enabled">
+    <value>False</value>
+  </record>
+
+  <!-- Configuration for plone.app.discussion -->
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.anonymous_comments">
+    <value>False</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.captcha">
+    <value>disabled</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.globally_enabled">
+    <value>True</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.moderation_enabled">
+    <value>False</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.moderator_email">
+    <value />
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.moderator_notification_enabled">
+    <value>False</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.show_commenter_image">
+    <value>True</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.text_transform">
+    <value>text/x-web-intelligent</value>
+  </record>
+  <record name="plone.app.discussion.interfaces.IDiscussionSettings.user_notification_enabled">
+    <value>True</value>
+  </record>
+
+  <!-- Maximum file sizes -->
+  <record name="collective.limitfilesizepanel.interfaces.ILimitFileSizePanel.file_size">
+    <value>100</value>
+  </record>
+  <record name="collective.limitfilesizepanel.interfaces.ILimitFileSizePanel.image_size">
+    <value>20</value>
+  </record>
+
+</registry>

@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+    <browser:page
+        name="sharing"
+        for="*"
+        class=".browser.sharing.SharingView"
+        permission="plone.DelegateRoles"
+        />
+    <browser:page
+        name="updateSharingInfo"
+        for="*"
+        class=".browser.sharing.SharingView"
+        attribute="updateSharingInfo"
+        permission="plone.DelegateRoles"
+        />
+
+</configure>

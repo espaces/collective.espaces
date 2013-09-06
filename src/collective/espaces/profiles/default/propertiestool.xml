@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<object name="portal_properties">
+  <!-- Configuration of PloneFormGen to avoid annoying emails -->
+  <object name="ploneformgen_properties" meta_type="Plone Property Sheet">
+    <property name="mail_recipient_email"
+       type="string">your-email@example.org</property>
+    <property name="mail_recipient_name" type="string">Your name</property>
+ </object>
+
+  <!-- General site settings -->
+  <object name="site_properties">
+   <property name="use_email_as_login">True</property>
+   <property name="verify_login_name">True</property>
+   <property name="enable_livesearch">False</property>
+  </object>
+
+</object>
