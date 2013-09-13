@@ -40,7 +40,7 @@ setup(name='collective.espaces',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'collective.monkeypatcher',
+          'plone.app.theming',
           'plone.app.caching',
           'plone.app.theming',
           'collective.spaces',

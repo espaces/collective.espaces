@@ -4,6 +4,9 @@
   <description>Installs the settings for an eSpaces portal.</description>
   <dependencies>
 
+    <!-- Diazo theming for Plone -->
+    <dependency>profile-plone.app.theming:default</dependency>
+
     <!-- Caching support for Plone -->
     <dependency>profile-plone.app.caching:default</dependency>
     <dependency>profile-plone.app.caching:without-caching-proxy</dependency>
