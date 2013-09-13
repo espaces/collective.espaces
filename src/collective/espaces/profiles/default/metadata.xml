@@ -30,7 +30,7 @@
     <dependency>profile-collective.spaces:default</dependency>
 
     <!-- Shibboleth authentication -->
-    <!-- <dependency>profile-collective.auth.aaf:default</dependency> -->
+    <dependency>profile-collective.aaf:default</dependency>
     <!-- plone.app.iterate -->
     <!-- plone.app.toolbar -->
     <!-- ftw.quota -->
