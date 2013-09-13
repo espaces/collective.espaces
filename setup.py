@@ -38,9 +38,6 @@ setup(name='collective.espaces',
       namespace_packages=['collective', ],
       include_package_data=True,
       zip_safe=False,
-      setup_requires=[
-          'setuptools-git',
-      ],
       install_requires=[
           'setuptools',
           'collective.monkeypatcher',
@@ -61,6 +58,6 @@ setup(name='collective.espaces',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      setup_requires=["PasteScript"],
+      setup_requires=["PasteScript", 'setuptools-git'],
       paster_plugins=["templer.localcommands"],
       )
