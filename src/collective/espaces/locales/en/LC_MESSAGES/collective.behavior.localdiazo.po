@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.behavior.localdiazo\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: 2013-08-14 16:57-0300\n"
+"Last-Translator: David Beitey <davidATdavidjb.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.behaviour.localdiazo\n"
+
+#: collective/behavior/localdiazo/behavior.py:21
+msgid "No local theme"
+msgstr "Site default"
+
+#: collective/behavior/localdiazo/behavior.py:31
+msgid "Select a theme to enable a different look and feel."
+msgstr "Select a theme to enable a different look and feel. This will change the overall appearance for all users using your Space."
+
