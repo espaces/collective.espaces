@@ -18,12 +18,7 @@
     </permission>
 
     <!-- Allow users to manage their own portlets -->
-    <permission name="Portlets: Manage own portlets" acquire="True">
-      <role name="Editor"/>
-      <role name="Manager"/>
-      <role name="Site Administrator"/>
-    </permission>
-    <permission name="plone.portlet.collection: Add collection portlet" acquire="True">
+    <permission name="Portlets: Manage portlets" acquire="True">
       <role name="Editor"/>
       <role name="Manager"/>
       <role name="Site Administrator"/>
