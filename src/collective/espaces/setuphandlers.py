@@ -23,8 +23,3 @@ def setupVarious(context, site=None):
 
     # Show all workflow states in calendar
     site.portal_calendar.calendar_states = ['external', 'internal', 'internally_published', 'pending', 'private', 'visible', 'published']
-
-    #Hide just the Space content type from navigation. GS reconfigures
-    #everything here.
-    site.portal_properties.navtree_properties.metaTypesNotToList += \
-            ('collective.spaces.space',)
