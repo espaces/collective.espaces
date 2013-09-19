@@ -1,6 +1,12 @@
 <?xml version="1.0"?>
 <rolemap>
   <permissions>
+    <!-- Ensure only AAF users can create Spaces -->
+    <permission name="collective.spaces: Create Space via web" acquire="False">
+      <role name="Shibboleth Authenticated"/>
+      <role name="Manager"/>
+      <role name="Site Administrator"/>
+    </permission>
     <!-- Prevents people copying others’ data unless they have access. -->
     <permission name="Copy or Move" acquire="False">
       <role name="Contributor"/>
