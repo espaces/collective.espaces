@@ -1,19 +1,6 @@
 <configure
-    xmlns="http://namespaces.zope.org/zope"
-    xmlns:browser="http://namespaces.zope.org/browser">
+    xmlns="http://namespaces.zope.org/zope">
 
-    <browser:page
-        name="sharing"
-        for="*"
-        class=".browser.sharing.SharingView"
-        permission="plone.DelegateRoles"
-        />
-    <browser:page
-        name="updateSharingInfo"
-        for="*"
-        class=".browser.sharing.SharingView"
-        attribute="updateSharingInfo"
-        permission="plone.DelegateRoles"
-        />
+    <include package=".browser" file="overrides.zcml" />
 
 </configure>
