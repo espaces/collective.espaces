@@ -2,5 +2,7 @@
 <object name="collective.spaces.space">
  <property name="behaviors" purge="False">
   <element value="collective.behavior.localanalytics.behavior.ILocalAnalytics"/>
+  <element value="collective.behavior.localdiazo.behavior.ILocalDiazo"/>
+  <element value="collective.behavior.localregistry.behavior.ILocalRegistry"/>
  </property>
 </object>

@@ -1,4 +1,9 @@
 <registry>
+  <!-- Turn plone.app.theming on for eSpaces -->
+  <record name="plone.app.theming.interfaces.IThemeSettings.enabled">
+    <value>True</value>
+  </record>
+
   <!-- Configuration for plone.app.caching
        We import the existing profile, but need to manually turn caching on.
   -->

@@ -31,6 +31,7 @@
 
     <!-- Shibboleth authentication -->
     <dependency>profile-collective.aaf:default</dependency>
+
     <!-- plone.app.iterate -->
     <!-- plone.app.toolbar -->
     <!-- ftw.quota -->
