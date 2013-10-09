@@ -15,6 +15,11 @@
       <property
        name="url_expr">string:${globals_view/navigationRootUrl}/dashboard</property>
     </object>
+
+    <!-- Hide the Register link -->
+    <object name="join">
+      <property name="visible">False</property>
+    </object>
   </object>
 
 </object>
