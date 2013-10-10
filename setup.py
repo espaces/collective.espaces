@@ -55,7 +55,8 @@ setup(name='collective.espaces',
           'collective.limitfilesizepanel',
           # -*- Extra requirements: -*-
       ],
-      extras_require={'test': ['plone.app.testing[robot]',
+      extras_require={'test': ['ipdb',
+                               'plone.app.testing[robot]',
                                'plone.app.robotframework']},
       entry_points="""
       # -*- Entry points: -*-

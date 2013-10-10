@@ -1,6 +1,7 @@
 import unittest2 as unittest
 
 from Products.CMFCore.utils import getToolByName
+from plone.app.testing import TEST_USER_NAME, TEST_USER_ID, setRoles, login, logout
 
 from collective.espaces.testing import \
     COLLECTIVE_ESPACES_INTEGRATION_TESTING
@@ -23,3 +24,38 @@ class TestInstall(unittest.TestCase):
         installed = [p['id'] for p in self.qi_tool.listInstalledProducts()]
         self.assertTrue(pid in installed,
                         'package appears not to have been installed')
+
+
+    def test_sharing_view(self):
+        from collective.espaces.browser.sharing import SharingView
+
+        setRoles(self.portal, TEST_USER_ID, ['Site Administrator'])
+        login(self.portal, TEST_USER_NAME)
+        self.portal.invokeFactory('collective.spaces.space', 'space')
+        login(self.portal, TEST_USER_NAME)
+        self.portal.space.invokeFactory('Folder', 'sub_folder')
+        context = self.portal.space.sub_folder
+
+        #Should not be able to edit inherited settings on Space content
+        view = SharingView(context, self.portal.REQUEST)
+        self.assertFalse(view.can_edit_inherit())
+
+        #Should be able to edit normally
+        view = SharingView(self.portal, self.portal.REQUEST)
+        self.assertTrue(view.can_edit_inherit())
+
+    def test_create_space_view(self):
+        from AccessControl import Unauthorized
+
+        setRoles(self.portal, TEST_USER_ID, ['Authenticated'])
+        login(self.portal, TEST_USER_NAME)
+        self.assertRaises(
+            Unauthorized,
+            self.portal.restrictedTraverse,
+            ('@@create-space',))
+
+        setRoles(self.portal, TEST_USER_ID, ['Shibboleth Authenticated'])
+        login(self.portal, TEST_USER_NAME)
+        view = self.portal.restrictedTraverse('@@create-space')
+        self.assertEqual(view.url(), 'http://nohost/plone/create-space')
+
