@@ -10,9 +10,11 @@
 
   <!-- General site settings -->
   <object name="site_properties">
-    <property name="use_email_as_login">True</property>
+    <property name="use_email_as_login">False</property>
     <property name="verify_login_name">True</property>
     <property name="enable_livesearch">False</property>
+    <property name="enable_sitemap">True</property>
+    <property name="webstats_js"></property>
   </object>
 
   <!-- Navigation settings -->
