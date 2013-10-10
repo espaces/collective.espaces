@@ -7,6 +7,15 @@
       <role name="Manager"/>
       <role name="Site Administrator"/>
     </permission>
+
+    <!-- Allow everyone to create themselves an account -->
+    <permission name="Add portal member" acquire="False">
+      <role name="Anonymous" />
+      <role name="Manager" />
+      <role name="Owner" />
+      <role name="Site Administrator" />
+    </permission>
+
     <!-- Prevents people copying others’ data unless they have access. -->
     <permission name="Copy or Move" acquire="False">
       <role name="Contributor"/>
