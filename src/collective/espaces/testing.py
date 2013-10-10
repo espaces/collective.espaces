@@ -1,8 +1,9 @@
 from plone.app.testing import PloneSandboxLayer
-from plone.app.testing import applyProfile, quickInstallProduct
+from plone.app.testing import applyProfile
 from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import FunctionalTesting
+from plone.app.robotframework.testing import AUTOLOGIN_LIBRARY_FIXTURE
 
 from plone.testing import z2
 
@@ -41,4 +42,10 @@ COLLECTIVE_ESPACES_INTEGRATION_TESTING = IntegrationTesting(
 COLLECTIVE_ESPACES_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(COLLECTIVE_ESPACES_FIXTURE, z2.ZSERVER_FIXTURE),
     name="CollectiveespacesLayer:Functional"
+)
+COLLECTIVE_ESPACES_ROBOT_TESTING = FunctionalTesting(
+    bases=(COLLECTIVE_ESPACES_FIXTURE,
+           AUTOLOGIN_LIBRARY_FIXTURE,
+           z2.ZSERVER_FIXTURE),
+    name="CollectiveespacesLayer:Robot"
 )
