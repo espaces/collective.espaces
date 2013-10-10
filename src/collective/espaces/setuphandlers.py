@@ -23,3 +23,17 @@ def setupVarious(context, site=None):
 
     # Show all workflow states in calendar
     site.portal_calendar.calendar_states = ['external', 'internal', 'internally_published', 'pending', 'private', 'visible', 'published']
+
+    # Unpublish all default content
+    paths = []
+    for identifier in ('Members', 'events', 'news'):
+        obj = site.get(identifier)
+        obj.getField('excludeFromNav').set(obj, True)
+        obj.reindexObject()
+        if obj:
+            paths.append('/'.join(obj.getPhysicalPath()))
+
+    plone_utils = getToolByName(site, 'plone_utils')
+    plone_utils.transitionObjectsByPaths('retract',
+                                         paths,
+                                         include_children=True)
