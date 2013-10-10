@@ -28,10 +28,12 @@ def setupVarious(context, site=None):
     paths = []
     for identifier in ('Members', 'events', 'news'):
         obj = site.get(identifier)
-        obj.getField('excludeFromNav').set(obj, True)
-        obj.reindexObject()
+        # Content is not included by default in tests
         if obj:
-            paths.append('/'.join(obj.getPhysicalPath()))
+            obj.getField('excludeFromNav').set(obj, True)
+            obj.reindexObject()
+            if obj:
+                paths.append('/'.join(obj.getPhysicalPath()))
 
     plone_utils = getToolByName(site, 'plone_utils')
     plone_utils.transitionObjectsByPaths('retract',

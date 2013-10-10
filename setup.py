@@ -55,7 +55,7 @@ setup(name='collective.espaces',
           'collective.limitfilesizepanel',
           # -*- Extra requirements: -*-
       ],
-      extras_require={'test': ['plone.app.testing']},
+      extras_require={'test': ['plone.app.testing[robot]']},
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]

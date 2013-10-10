@@ -11,10 +11,23 @@ ${BROWSER} =  firefox
 
 *** Test Cases ***
 
-Plone site
+Plone site exists
     [Tags]  start
-    Go to  http://localhost:55001/plone/
-    Page should contain  Plone site
+    Page should contain      eSpaces
+    Page should contain      eSpaces is a free web-based collaboration platform
+    Page should contain      Log in
+    Page should not contain  Register
+    Page should contain      Space Template
+
+Login screen loads
+    Click link  Log in
+    Page should contain      AAF
+    Page should contain      Log in
+    Page should contain      Register
+    Wait Until Keyword Succeeds  5  0.5  Element should be visible  css=#wayf_logo
+
+    Click link  Register
+    Element should be visible  xpath=//form[contains(@action, '@@register')]
 
 *** Keywords ***
 

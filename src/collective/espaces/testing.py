@@ -1,5 +1,5 @@
 from plone.app.testing import PloneSandboxLayer
-from plone.app.testing import applyProfile
+from plone.app.testing import applyProfile, quickInstallProduct
 from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import FunctionalTesting
@@ -23,14 +23,15 @@ class CollectiveespacesLayer(PloneSandboxLayer):
         )
 
         # Install products that use an old-style initialize() function
-        #z2.installProduct(app, 'Products.PloneFormGen')
+        z2.installProduct(app, 'Products.AutoUserMakerPASPlugin')
 
-#    def tearDownZope(self, app):
-#        # Uninstall products installed above
-#        z2.uninstallProduct(app, 'Products.PloneFormGen')
+    def tearDownZope(self, app):
+        # Uninstall products installed above
+        z2.uninstallProduct(app, 'Products.AutoUserMakerPASPlugin')
 
     def setUpPloneSite(self, portal):
         applyProfile(portal, 'collective.espaces:default')
+
 
 COLLECTIVE_ESPACES_FIXTURE = CollectiveespacesLayer()
 COLLECTIVE_ESPACES_INTEGRATION_TESTING = IntegrationTesting(

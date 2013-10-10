@@ -6,7 +6,7 @@ from collective.espaces.testing import \
     COLLECTIVE_ESPACES_INTEGRATION_TESTING
 
 
-class TestExample(unittest.TestCase):
+class TestInstall(unittest.TestCase):
 
     layer = COLLECTIVE_ESPACES_INTEGRATION_TESTING
 
