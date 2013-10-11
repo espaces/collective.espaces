@@ -10,19 +10,22 @@
     <!-- Caching support for Plone -->
     <dependency>profile-plone.app.caching:default</dependency>
     <dependency>profile-plone.app.caching:without-caching-proxy</dependency>
+
     <!-- Ensure discussions are installed and enabled -->
     <dependency>profile-plone.app.discussion:default</dependency>
 
     <!-- Office 2007+ document support -->
     <dependency>profile-Products.OpenXml:default</dependency>
+    
     <!-- Alias management interface for Plone -->
     <dependency>profile-Products.RedirectionTool:default</dependency>
-    <!-- Collage pages for easy customisation of displays -->
-    <dependency>profile-Products.Collage:default</dependency>
+
     <!-- Online form interface -->
     <dependency>profile-Products.PloneFormGen:default</dependency>
+
     <!-- Basic Twitter widget integration -->
     <dependency>profile-collective.portlet.twitter:default</dependency>
+
     <!-- File size limitation configuration -->
     <dependency>profile-collective.limitfilesizepanel:default</dependency>
 
