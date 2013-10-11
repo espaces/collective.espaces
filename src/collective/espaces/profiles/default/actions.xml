@@ -1,11 +1,9 @@
 <?xml version="1.0"?>
 <object name="portal_actions">
   <object name="site_actions">
-
-    <!-- Only show the Contact form on the site root. -->
+    <!-- Hide the Contact link -->
     <object name="contact">
-      <property
-        name="available_expr">python:context.restrictedTraverse('@@plone_portal_state').portal_url() == context.restrictedTraverse('@@plone_portal_state').navigation_root_url()</property>
+      <property name="visible">False</property>
     </object> 
   </object>
 

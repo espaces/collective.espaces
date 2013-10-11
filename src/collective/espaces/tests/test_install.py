@@ -26,7 +26,6 @@ class TestInstall(unittest.TestCase):
         self.assertTrue(pid in installed,
                         'package appears not to have been installed')
 
-
     def test_permissions(self):
         setRoles(self.portal, TEST_USER_ID, ['Site Administrator'])
         login(self.portal, TEST_USER_NAME)
