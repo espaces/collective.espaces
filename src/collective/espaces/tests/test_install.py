@@ -1,5 +1,6 @@
 import unittest2 as unittest
 
+from AccessControl import getSecurityManager
 from Products.CMFCore.utils import getToolByName
 from plone.app.testing import TEST_USER_NAME, TEST_USER_ID, setRoles, login, logout
 
@@ -25,6 +26,21 @@ class TestInstall(unittest.TestCase):
         self.assertTrue(pid in installed,
                         'package appears not to have been installed')
 
+
+    def test_permissions(self):
+        setRoles(self.portal, TEST_USER_ID, ['Site Administrator'])
+        login(self.portal, TEST_USER_NAME)
+        self.portal.invokeFactory('collective.spaces.space', 'space')
+        self.portal.space.manage_addLocalRoles(TEST_USER_ID, ['Editor'])
+        setRoles(self.portal, TEST_USER_ID, ['Member'])
+        login(self.portal, TEST_USER_NAME)
+        sm = getSecurityManager()
+        self.assertTrue(
+            sm.checkPermission('Portlets: Manage portlets',
+                               self.portal.space))
+        self.assertTrue(
+            sm.checkPermission('plone.portlet.static: Add static portlet',
+                               self.portal.space))
 
     def test_sharing_view(self):
         from collective.espaces.browser.sharing import SharingView
