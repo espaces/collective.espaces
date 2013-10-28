@@ -55,6 +55,8 @@ setup(name='collective.espaces',
           # -*- Extra requirements: -*-
       ],
       extras_require={'test': ['ipdb',
+                               'collective.spaces[test]',
+                               'collective.aaf[test]',
                                'plone.app.testing[robot]',
                                'plone.app.robotframework']},
       entry_points="""
