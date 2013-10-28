@@ -11,12 +11,8 @@
     type="collective.aaf.portlets.ShibbolethLoginPortlet"
     insert-before="*"
     visible="True">
-    <!--
     <property name="wayf_sp_entityID">string:https://espaces.edu.au/shibboleth</property>
     <property name="wayf_sp_handlerURL">string:https://espaces.edu.au/Shibboleth.sso</property>
-    -->
-    <property name="wayf_sp_entityID">string:https://eresearch.jcu.edu.au/shibboleth</property>
-    <property name="wayf_sp_handlerURL">string:https://eresearch.jcu.edu.au/Shibboleth.sso</property>
  </assignment>
 
 </portlets>
