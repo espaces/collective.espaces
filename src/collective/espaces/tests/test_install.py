@@ -3,6 +3,7 @@ import unittest2 as unittest
 from AccessControl import getSecurityManager
 from Products.CMFCore.utils import getToolByName
 from plone.app.testing import TEST_USER_NAME, TEST_USER_ID, setRoles, login, logout
+from plone.app.testing import SITE_OWNER_NAME
 
 from collective.espaces.testing import \
     COLLECTIVE_ESPACES_INTEGRATION_TESTING
@@ -26,7 +27,7 @@ class TestInstall(unittest.TestCase):
         self.assertTrue(pid in installed,
                         'package appears not to have been installed')
 
-    def test_permissions(self):
+    def test_portlet_permissions(self):
         setRoles(self.portal, TEST_USER_ID, ['Site Administrator'])
         login(self.portal, TEST_USER_NAME)
         self.portal.invokeFactory('collective.spaces.space', 'space')
@@ -40,6 +41,31 @@ class TestInstall(unittest.TestCase):
         self.assertTrue(
             sm.checkPermission('plone.portlet.static: Add static portlet',
                                self.portal.space))
+
+    def test_copy_permission(self):
+        """ Copy permission should only be allowed by someone with a role.
+        """
+        setRoles(self.portal, TEST_USER_ID, ['Site Administrator'])
+        login(self.portal, TEST_USER_NAME)
+        self.portal.invokeFactory('Folder', 'folder')
+        folder = self.portal.folder
+        reg_tool = getToolByName(self.portal, 'portal_registration')
+        dummy = reg_tool.addMember('dummy', 'password')
+        folder.changeOwnership(dummy)
+        folder.manage_setLocalRoles(TEST_USER_ID, ['Member'])
+
+        #Try as a regular member
+        setRoles(self.portal, TEST_USER_ID, ['Member'])
+        login(self.portal, TEST_USER_NAME)
+        sm = getSecurityManager()
+        self.assertFalse(sm.checkPermission('Copy or Move', folder))
+
+        #Try as someone with a role on the content
+        folder.manage_setLocalRoles(TEST_USER_ID, ['Editor'])
+        setRoles(self.portal, TEST_USER_ID, ['Editor'])
+        login(self.portal, TEST_USER_NAME)
+        sm = getSecurityManager()
+        self.assertTrue(sm.checkPermission('Copy or Move', folder))
 
     def test_sharing_view(self):
         from collective.espaces.browser.sharing import SharingView
