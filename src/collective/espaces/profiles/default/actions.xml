@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<object name="portal_actions">
+<object name="portal_actions"
+  xmlns:i18n="http://xml.zope.org/namespaces/i18n">
   <object name="site_actions">
     <!-- Hide the Contact link -->
     <object name="contact">
@@ -17,6 +18,26 @@
     <!-- Hide the Register link -->
     <object name="join">
       <property name="visible">False</property>
+    </object>
+
+    <object name="create_space">
+      <property name="title">Create an eSpace</property>
+    </object>
+  </object>
+
+  <!-- Create an eSpace in top navigation, only visible at root --> 
+  <object name="portal_tabs">
+    <object name="create_space" meta_type="CMF Action" i18n:domain="collective.espaces" insert-after="*">
+     <property name="title" i18n:translate="">Create an eSpace</property>
+     <property name="description" i18n:translate=""></property>
+     <property name="url_expr">string:${portal_url}/@@create-space</property>
+     <property name="link_target"></property>
+     <property name="icon_expr"></property>
+     <property name="available_expr">python:member is not None and context.restrictedTraverse('@@plone_portal_state').portal_url() == context.restrictedTraverse('@@plone_portal_state').navigation_root_url()</property>
+     <property name="permissions">
+      <element value="collective.spaces: Create Space via web"/>
+     </property>
+     <property name="visible">True</property>
     </object>
   </object>
 
