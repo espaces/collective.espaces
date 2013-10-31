@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
     xmlns:browser="http://namespaces.zope.org/browser">
 
     <browser:page
@@ -17,5 +18,9 @@
         permission="plone.DelegateRoles"
         layer="collective.espaces.browser.interfaces.IThemeSpecific"
         />
+
+    <!-- Override generic logos from Bootswatch -->
+    <!-- XXX This can be greatly improved from this hack. -->
+    <plone:static directory="plone" name="plone" type="theme"/>
 
 </configure>
