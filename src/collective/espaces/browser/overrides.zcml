@@ -7,6 +7,7 @@
         for="*"
         class=".sharing.SharingView"
         permission="plone.DelegateRoles"
+        layer="collective.espaces.browser.interfaces.IThemeSpecific"
         />
     <browser:page
         name="updateSharingInfo"
@@ -14,6 +15,7 @@
         class=".sharing.SharingView"
         attribute="updateSharingInfo"
         permission="plone.DelegateRoles"
+        layer="collective.espaces.browser.interfaces.IThemeSpecific"
         />
 
 </configure>
