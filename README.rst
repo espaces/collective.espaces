@@ -17,7 +17,8 @@ Features
 * Self-creation of eSpaces (powered by `collective.spaces`)
 
   * Users must be authenticated via Shibboleth (AAF) to be able to create
-    their own Spaces.
+    their own Spaces. This is protected by a special Plone security
+    role that this policy product assigns to "AAF Authenticated" users.
   * Any user with an AAF account is able to create a Space.
   * File quotas are limited to 100MB per file, and 20MB per image.
   * Ability to associate a custom URL with your space, or the ability
