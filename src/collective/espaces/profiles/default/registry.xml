@@ -48,7 +48,7 @@
 
   <!-- Maximum file sizes -->
   <record name="collective.limitfilesizepanel.interfaces.ILimitFileSizePanel.file_size">
-    <value>100</value>
+    <value>300</value>
   </record>
   <record name="collective.limitfilesizepanel.interfaces.ILimitFileSizePanel.image_size">
     <value>20</value>
