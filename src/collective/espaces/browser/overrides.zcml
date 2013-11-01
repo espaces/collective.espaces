@@ -23,4 +23,33 @@
     <!-- XXX This can be greatly improved from this hack. -->
     <plone:static directory="plone" name="plone" type="theme"/>
 
+    <!-- Hide default Plone example theme -->
+    <plone:static directory="empty" name="example" type="theme"/>
+
+    <!-- Hide other themes that don't really work -->
+    <plone:static directory="empty" name="bootstrap-marketing-narrow" type="theme" />
+    <plone:static directory="empty" name="amelia-narrow" type="theme" />
+    <plone:static directory="empty" name="cerulean-narrow" type="theme" />
+    <plone:static directory="empty" name="cosmo-narrow" type="theme" />
+    <plone:static directory="empty" name="cyborg-narrow" type="theme" />
+    <plone:static directory="empty" name="journal-narrow" type="theme" />
+    <plone:static directory="empty" name="readable-narrow" type="theme" />
+    <plone:static directory="empty" name="simplex-narrow" type="theme" />
+    <plone:static directory="empty" name="slate-narrow" type="theme" />
+    <plone:static directory="empty" name="spacelab-narrow" type="theme" />
+    <plone:static directory="empty" name="spruce-narrow" type="theme" />
+    <plone:static directory="empty" name="superhero-narrow" type="theme" />
+    <plone:static directory="empty" name="united-narrow" type="theme" />
+
+    <plone:static directory="empty" name="foundation-framework" type="theme" />
+    <plone:static directory="empty" name="foundstyles-bladesofsteel" type="theme" />
+    <plone:static directory="empty" name="foundstyles-coffeenmilk" type="theme" />
+    <plone:static directory="empty" name="foundstyles-evergreen" type="theme" /> 
+    <plone:static directory="empty" name="goldilocks-framework" type="theme" />
+    <plone:static directory="empty" name="goldilocks-black" type="theme" /> 
+    <plone:static directory="empty" name="kube-framework" type="theme" />
+    <plone:static directory="empty" name="kube-start" type="theme" />
+    <plone:static directory="empty" name="kube-demo" type="theme" />
+
+
 </configure>

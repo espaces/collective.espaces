@@ -39,6 +39,11 @@ Features
     researchers and collaborators.
   * Self-registration enabled for non-AAF users.
 
+* User-selectable theming
+
+  * Users can pick from any number of Bootswatch-style (http://bootswatch.com)
+    themes, which have been integrated into Plone.
+
 Final customisations
 ====================
 
@@ -58,4 +63,15 @@ Future
 
 * Display size quota usage in a portlet or somewhere accessible to the user.
 * Potentially limits on the number of Spaces a person may create
+
+Notes 
+=====
+
+Theming
+-------
+
+The underlying library, ``diazotheme.bootswatch`` provides a number of other
+themes, but these have been diasabled by somewhat of a hack.  Either these
+themes could be improved, or a better way of disabling themes should be
+investigated.
 
