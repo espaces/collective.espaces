@@ -6,6 +6,9 @@
     <object name="contact">
       <property name="visible">False</property>
     </object> 
+    <object name="accessibility">
+      <property name="visible">False</property>
+    </object> 
   </object>
 
   <!-- Ensure user dashboard is rooted to the navigation root. -->
