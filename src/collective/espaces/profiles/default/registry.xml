@@ -3,6 +3,15 @@
   <record name="plone.app.theming.interfaces.IThemeSettings.enabled">
     <value>True</value>
   </record>
+  <record name="plone.app.theming.interfaces.IThemeSettings.absolutePrefix">
+    <value>/++theme++spacelab</value>
+  </record>
+  <record name="plone.app.theming.interfaces.IThemeSettings.currentTheme">
+    <value>spacelab</value>
+  </record>
+  <record name="plone.app.theming.interfaces.IThemeSettings.doctype">
+    <value>&lt;!DOCTYPE html&gt;</value>
+  </record>
 
   <!-- Configuration for plone.app.caching
        We import the existing profile, but need to manually turn caching on.
