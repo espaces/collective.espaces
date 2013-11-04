@@ -18,6 +18,12 @@
         permission="plone.DelegateRoles"
         layer="collective.espaces.browser.interfaces.IThemeSpecific"
         />
+    <browser:page
+        for="plone.app.layout.navigation.interfaces.INavigationRoot"
+        name="change-password"
+        class=".views.PasswordAccountPanel"
+        permission="cmf.SetOwnPassword"
+        />
 
     <!-- Override generic logos from Bootswatch -->
     <!-- XXX This can be greatly improved from this hack. -->
