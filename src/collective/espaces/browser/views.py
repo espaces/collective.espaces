@@ -17,6 +17,10 @@ class CustomCreateSpaceForm(CreateSpaceForm):
 
 class PasswordAccountPanel(OriginalPasswordAccountPanel):
 
+    description = u"Change or regenerate password. If you are logged in" \
+                  u" via your institutional account, then you can select to" \
+                  u" generate a new local password below."
+
     actions = form.Actions(
         form.Action('Change password',
                     success='action_reset_passwd',
