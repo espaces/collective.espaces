@@ -2,4 +2,5 @@
 <object name="portal_javascripts">
   <javascript enabled="False" id="popupforms.js"/>
   <javascript enabled="False" id="calendar_formfield.js"/>
+  <javascript enabled="False" id="kss-bbb.js"/>
 </object>
