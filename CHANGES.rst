@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Fix issue with z3c.jbot resources in production.
+  [davidjb]
 - Re-add "Inherit permissions" for all users on the Sharing view.
   [davidjb]
 - Add File and Image types to having the default workflow.
