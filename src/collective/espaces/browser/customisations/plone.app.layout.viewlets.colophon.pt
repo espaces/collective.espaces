@@ -1,0 +1,12 @@
+<div id="portal-colophon"
+     i18n:domain="plone">
+<div class="colophonWrapper">
+<ul>
+  <li>
+    <a href="https://espaces.edu.au"
+       title="This site was built using the eSpaces platform for research.">
+      Powered by eSpaces for research</a>
+  </li>
+</ul>
+</div>
+</div>

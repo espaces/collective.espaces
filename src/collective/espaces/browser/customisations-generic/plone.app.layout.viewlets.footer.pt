@@ -1,0 +1,14 @@
+<div i18n:domain="plone"
+     id="portal-footer">
+  <p>
+    <b style="color: #666">Designed for researchers and projects.</b>
+    <abbr title="Copyright" i18n:attributes="title title_copyright;">&copy;</abbr>
+    2008-<tal:year tal:content="view/year" />
+    <a href="http://eresearch.jcu.edu.au">eResearch Centre</a>,
+    <a href="http://jcu.edu.au">James Cook University</a>.
+    <br/>
+    Created in <a href="http://python.org">Python</a> using the 
+    <a href="http://plone.org" i18n:translate="label_plone_cms">Plone CMS</a>.
+    Open source on <a href="http://git.io/espaces">GitHub</a>. 
+  </p>
+</div>

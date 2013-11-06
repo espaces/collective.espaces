@@ -1,0 +1,21 @@
+<div id="portal-colophon"
+     i18n:domain="plone">
+<div class="colophonWrapper" tal:define="navroot context/@@plone_portal_state/navigation_root_url">
+<ul>
+  <li>
+    <a href="http://eresearch.jcu.edu.au"
+      title="Developed by the eResearch Centre at JCU">
+      <img width="180" height="77" alt="JCU Logo" tal:attributes="src string:${navroot}/++resource++espaces/jcu.png"/>
+      &nbsp;
+      <img width="180" height="51" alt="eResearch Centre Logo" tal:attributes="src string:${navroot}/++resource++espaces/eresearch.png"/>
+    </a>
+  </li>
+  <li>
+    <a href="http://qcif.edu.au"
+      title="Migration supported by QCIF">
+      <img width="98" height="83" alt="QCIF Logo" tal:attributes="src string:${navroot}/++resource++espaces/qcif.png"/>
+    </a>
+  </li>
+</ul>
+</div>
+</div>

@@ -1,6 +1,10 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser">
+    
+  <browser:resourceDirectory
+      name="espaces"
+      directory="static" />
 
   <include package="z3c.jbot" file="meta.zcml" />
   <browser:jbot 
