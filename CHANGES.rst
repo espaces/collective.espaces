@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Re-add "Inherit permissions" for all users on the Sharing view.
+  [davidjb]
 - Add File and Image types to having the default workflow.
   [davidjb]
 - Customise default Plone colophon and footer to suit eSpaces.
