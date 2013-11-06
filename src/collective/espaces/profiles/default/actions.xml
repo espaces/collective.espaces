@@ -8,7 +8,14 @@
     </object> 
     <object name="accessibility">
       <property name="visible">False</property>
-    </object> 
+    </object>
+    <object name="terms_of_service" meta_type="CMF Action" insert-before="portal_home">
+      <property name="title">Terms of Service</property>
+      <property name="description"></property>
+      <property name="url_expr">string:${portal_url}/terms</property>
+      <property name="permissions"/>
+      <property name="visible">True</property>
+    </object>
   </object>
 
   <!-- Ensure user dashboard is rooted to the navigation root. -->
