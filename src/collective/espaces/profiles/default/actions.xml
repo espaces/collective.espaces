@@ -33,6 +33,10 @@
     <object name="create_space">
       <property name="title">Create an eSpace</property>
     </object>
+
+    <object name="login">
+       <property name="url_expr">string:https://espaces.edu.au/login</property>
+    </object>
   </object>
 
   <!-- Create an eSpace in top navigation, only visible at root --> 
