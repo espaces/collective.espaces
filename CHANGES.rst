@@ -4,6 +4,11 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Add new Bootstrap designs and custom Diazo theme based
+  upon diazotheme.bootswatch's Spacelab.
+  [davidjb]
+- Add touch icon and optimise other images.
+  [davidjb]
 - Fix issue with z3c.jbot resources in production.
   [davidjb]
 - Re-add "Inherit permissions" for all users on the Sharing view.

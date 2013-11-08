@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"    
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+
+   <!-- AJAX: Folder listings -->
+   <rules css:if-content="body > #folderlisting-main-table">
+    <xi:include href="++theme++bootstrap-framework/rules/edit.xml"/>
+    <xi:include href="++theme++bootstrap-framework/rules/forms.xml"/>
+   </rules>
+   <!-- AJAX: Search page results -->
+   <rules css:if-content="body > #updated-search-results-number">
+    <xi:include href="++theme++bootstrap-framework/rules/general.xml"/>
+   </rules>
+
+  <!-- The condition makes sure that theme is only applied when served in the 
+       plone main_template. This is necessary for functional edit popups in 
+       Tiny, for example. -->
+  <rules css:if-content="#visual-portal-wrapper">
+
+    <theme href="++theme++bootstrap-framework/examples/starter-template.html" />
+
+    <!-- Head rules
+         ================================================================== -->
+    <replace css:theme="link[href*='bootstrap-responsive.css']">
+        <link href="{$base}/++theme++espaces/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+    </replace>
+    <xi:include href="++theme++bootstrap-framework/rules/head-base.xml"/>
+
+    <!-- Framework styles -->
+    <replace css:theme="head link[href*='bootstrap.css']">
+        <link href="{$base}/++theme++espaces/css/bootstrap.min.css" rel="stylesheet"/>
+    </replace>
+
+    <!-- Styles missing from theme from Plone -->
+    <after css:theme-children="head">
+        <link href="{$base}/++resource++plone.app.discussion.stylesheets/discussion.css" rel="stylesheet"/>
+    </after>
+    <!-- Style -->
+    <copy css:theme="head style">
+      <xsl:text disable-output-escaping="yes">
+        body { padding-top: 80px; }
+        button + button { margin-left: .5em; }
+        .ploneCalendar { width: 100%; }
+        .ploneCalendar th { text-align: left; }
+        .ploneCalendar td { text-align: right; }
+        .ploneCalendar td[class*=today] { font-size: 150%; }
+        .calendarHeader { text-align: center; }
+        .criteria > select, .criteria > input, .criteria > button, .criteria > div { float: left; margin: 0; }
+        .criteria > div:first-child { float: none; margin: 1em 0; }
+        .criteria, .sortingField { clear: both; }
+        .hiddenStructure { display: block; background: transparent; background-image: none; border: none; height: 0.1em; overflow: hidden; padding: 0; margin: -0.1em 0 0 -0.1em; width: 1px; position: absolute; }
+        #content .searchField[type='text'] { margin: 0 .5em 0 0; }
+        #content .searchPage { margin: 0 .5em 0 0; }
+        #calendar-previous { float: left; }
+        #calendar-next { float: right; }
+        #calendar-previous, #calendar-next { text-decoration: none; }
+        #searchbox_currentfolder_only_label { margin: 5px; }
+        #portal-columns, #portal-header { margin-bottom: 2em; }
+        #kss-spinner { display: none; }
+        input[type='checkbox'] { margin-right: .5em; }
+        .commentImage img { height: 32px; }
+      </xsl:text>
+    </copy>
+
+    <!-- Body rules
+         ================================================================== -->
+    <!--<xi:include href="++theme++plone/rules/logo/blue-64.xml"/>-->
+    <xi:include href="++theme++bootstrap-framework/rules/header.xml"/>
+    <xi:include href="++theme++bootstrap-framework/rules/grid.xml"/>
+    <xi:include href="++theme++bootstrap-framework/rules/columns.xml"/>
+    <xi:include href="++theme++bootstrap-framework/rules/lead-hero.xml"/>
+    <xi:include href="++theme++bootstrap-framework/rules/content.xml"/>
+    <xi:include href="++theme++bootstrap-framework/rules/forms.xml"/>
+    <xi:include href="++theme++bootstrap-framework/rules/portlets.xml"/>
+    <xi:include href="++theme++bootstrap-framework/rules/edit.xml"/>
+    <xi:include href="++theme++bootstrap-framework/rules/footer-inverse.xml"/>
+    <xi:include href="++theme++bootstrap-framework/rules/general.xml"/>
+
+    <!-- Place the content 
+         .................................................................. -->
+    <drop css:theme-children="body"/>
+    <before css:theme-children="body" css:content-children="body"/>
+    <after css:theme-children="body">
+        <script src="{$base}/++theme++bootstrap-framework/js/bootstrap.min.js"></script>
+    </after>
+
+  </rules>
+
+</rules>
