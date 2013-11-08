@@ -44,6 +44,11 @@ Features
   * Users can pick from any number of Bootswatch-style (http://bootswatch.com)
     themes, which have been integrated into Plone.
 
+* Custom eSpaces theme
+
+  * Custom-designed theme, built on Bootstrap and Bootswatch, provided for use within Plone.
+    Source located at `espaces.bootswatch <https://github.com/espaces/espaces.bootswatch>`_.
+
 Final customisations
 ====================
 
