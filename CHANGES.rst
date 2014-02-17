@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Ensure jbot resources for generic sites are applied.
+  [davidjb]
 - Force search boxes to search eSpaces backend site rather than
   the public site.
   [davidjb]
