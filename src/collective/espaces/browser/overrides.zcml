@@ -9,6 +9,13 @@
         class=".views.PasswordAccountPanel"
         permission="cmf.SetOwnPassword"
         />
+    <browser:viewlet
+        name="plone.searchbox"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".views.CustomSearchBoxViewlet"
+        permission="zope2.View"
+        />
+
 
     <!-- Override generic logos from Bootswatch -->
     <!-- XXX This can be greatly improved from this hack. -->

@@ -4,6 +4,7 @@ from collective.aaf.auth import _generatePassword
 from collective.spaces.browser.createform import CreateSpaceForm
 from plone.app.users.browser.personalpreferences \
         import PasswordAccountPanel as OriginalPasswordAccountPanel
+from plone.app.layout.viewlets.common import SearchBoxViewlet
 
 
 grok.templatedir('.')
@@ -13,6 +14,13 @@ class CustomCreateSpaceForm(CreateSpaceForm):
     """ Extend and customise the Space creation form.
     """
     grok.template('create-space')
+
+
+class CustomSearchBoxViewlet(SearchBoxViewlet):
+
+    def update(self):
+        super(CustomSearchBoxViewlet, self).update()
+        self.navigation_root_url = 'https://espaces.edu.au'
 
 
 class PasswordAccountPanel(OriginalPasswordAccountPanel):

@@ -4,6 +4,9 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Force search boxes to search eSpaces backend site rather than
+  the public site.
+  [davidjb]
 - Move Sharing page customisations to browser layer rather than
   hard override.
   [davidjb]
