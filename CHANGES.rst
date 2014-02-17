@@ -4,6 +4,9 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Move Sharing page customisations to browser layer rather than
+  hard override.
+  [davidjb]
 - Add new Bootstrap designs and custom Diazo theme based
   upon diazotheme.bootswatch's Spacelab.
   [davidjb]

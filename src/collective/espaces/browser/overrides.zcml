@@ -4,21 +4,6 @@
     xmlns:browser="http://namespaces.zope.org/browser">
 
     <browser:page
-        name="sharing"
-        for="*"
-        class=".sharing.SharingView"
-        permission="plone.DelegateRoles"
-        layer="collective.espaces.browser.interfaces.IThemeSpecific"
-        />
-    <browser:page
-        name="updateSharingInfo"
-        for="*"
-        class=".sharing.SharingView"
-        attribute="updateSharingInfo"
-        permission="plone.DelegateRoles"
-        layer="collective.espaces.browser.interfaces.IThemeSpecific"
-        />
-    <browser:page
         for="plone.app.layout.navigation.interfaces.INavigationRoot"
         name="change-password"
         class=".views.PasswordAccountPanel"
