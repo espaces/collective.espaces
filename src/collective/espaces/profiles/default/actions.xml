@@ -12,7 +12,7 @@
     <object name="terms_of_service" meta_type="CMF Action" insert-before="portal_home">
       <property name="title">Terms of Service</property>
       <property name="description"></property>
-      <property name="url_expr">string:https://espaces.edu.au/terms</property>
+      <property name="url_expr">string:https://www.espaces.edu.au/terms</property>
       <property name="permissions"/>
       <property name="visible">True</property>
     </object>
