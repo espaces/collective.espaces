@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object>
+ <resourcetypes>
+ <layout>
+  <tablestyles>
+   <element value="Plain|plain table"/>
+   <element value="Striped|listing table table-striped"/>
+   <element value="Bordered|plain table table-bordered"/>
+   <element value="Hover|plain table table-hover"/>
+   <element value="Condensed|plain table table-condensed"/>
+  </tablestyles>
+ </layout>
+</object>
