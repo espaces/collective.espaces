@@ -1,7 +1,7 @@
 <div i18n:domain="plone"
      id="portal-footer">
   <p>
-    <b style="color: #666">Designed for researchers and projects.</b>
+    <b class="muted">Designed for researchers and projects.</b>
     <abbr title="Copyright" i18n:attributes="title title_copyright;">&copy;</abbr>
     2008-<tal:year tal:content="view/year" />
     <a href="http://eresearch.jcu.edu.au">eResearch Centre</a>,
