@@ -4,6 +4,10 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Uncook ++resource++ CSS registry resources for Discussion
+  and TinyMCE.  This allows them to shine through to the themed
+  pages.
+  [davidjb]
 - Add TinyMCE configuration for tables.
   [davidjb]
 - Ensure jbot resources for generic sites are applied.
