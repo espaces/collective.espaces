@@ -24,9 +24,6 @@
 
     <!-- Head rules
          ================================================================== -->
-    <replace css:theme="link[href*='bootstrap-responsive.css']">
-        <link href="{$base}/++theme++espaces/css/bootstrap-responsive.min.css" rel="stylesheet"/>
-    </replace>
     <xi:include href="++theme++bootstrap-framework/rules/head-base.xml"/>
 
     <!-- Framework styles -->
@@ -34,10 +31,6 @@
         <link href="{$base}/++theme++espaces/css/bootstrap.min.css" rel="stylesheet"/>
     </replace>
 
-    <!-- Styles missing from theme from Plone -->
-    <after css:theme-children="head">
-        <link href="{$base}/++resource++plone.app.discussion.stylesheets/discussion.css" rel="stylesheet"/>
-    </after>
     <!-- Style -->
     <copy css:theme="head style">
       <xsl:text disable-output-escaping="yes">
