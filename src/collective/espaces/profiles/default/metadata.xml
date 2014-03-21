@@ -16,7 +16,7 @@
 
     <!-- Office 2007+ document support -->
     <dependency>profile-Products.OpenXml:default</dependency>
-    
+
     <!-- Alias management interface for Plone -->
     <dependency>profile-Products.RedirectionTool:default</dependency>
 
@@ -34,6 +34,9 @@
 
     <!-- Shibboleth authentication -->
     <dependency>profile-collective.aaf:default</dependency>
+
+    <!-- Folder sorting -->
+    <dependency>profile-collective.sortmyfolder:default</dependency>
 
     <!-- plone.app.iterate -->
     <!-- plone.app.toolbar -->

@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-import os
 
 version = '0.1'
 
@@ -54,6 +53,7 @@ setup(name='collective.espaces',
           'Products.PloneFormGen',
           'collective.portlet.twitter',
           'collective.limitfilesizepanel',
+          'collective.sortmyfolder'
           # -*- Extra requirements: -*-
       ],
       extras_require={'test': ['ipdb',

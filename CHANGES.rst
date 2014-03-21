@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Add ability to sort folders with ``collective.sortmyfolder``.
+  [davidjb]
 - Uncook ++resource++ CSS registry resources for Discussion
   and TinyMCE.  This allows them to shine through to the themed
   pages.
