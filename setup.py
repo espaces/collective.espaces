@@ -53,7 +53,7 @@ setup(name='collective.espaces',
           'Products.PloneFormGen',
           'collective.portlet.twitter',
           'collective.limitfilesizepanel',
-          'collective.sortmyfolder'
+          'collective.sortmyfolder>=1.0.7'
           # -*- Extra requirements: -*-
       ],
       extras_require={'test': ['ipdb',
