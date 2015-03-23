@@ -39,7 +39,6 @@ setup(name='collective.espaces',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'Products.CMFPlone>=4.3.5.dev0',
           'z3c.jbot',
           'plone.app.theming',
           'diazotheme.bootswatch',
