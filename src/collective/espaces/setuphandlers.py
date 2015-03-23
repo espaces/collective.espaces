@@ -3,11 +3,12 @@ from Products.CMFCore.utils import getToolByName
 
 PROFILE_ID = 'profile-collective.espaces:default'
 
+
 def setupVarious(context, site=None):
     """
-    Set up various aspects of Plone that we can't set up using
-    GenericSetup profiles (yet).  These aspects should be removed
-        whenever possible and replaced with a GS import profile.
+    Set up various aspects of Plone that we can't set up using GenericSetup
+    profiles (yet).  These aspects should be removed whenever possible and
+    replaced with a GS import profile.
     """
 
     # Ordinarily, GenericSetup handlers check for the existence of XML files.
@@ -22,7 +23,14 @@ def setupVarious(context, site=None):
     site = site or getSite()
 
     # Show all workflow states in calendar
-    site.portal_calendar.calendar_states = ['external', 'internal', 'internally_published', 'pending', 'private', 'visible', 'published']
+    site.portal_calendar.calendar_states = \
+        ['external',
+         'internal'
+         'internally_published'
+         'pending'
+         'private'
+         'visible'
+         'published']
 
     # Unpublish all default content
     paths = []
