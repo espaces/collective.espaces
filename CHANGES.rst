@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Customise contact form to be hidden for public users.
+  [davidjb]
 - Customise user registration and password reset emails with nice HTML.
   [davidjb]
 - Enable local user registration & CAPTCHA the registration form.
