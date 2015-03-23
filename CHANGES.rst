@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Customise user registration and password reset emails with nice HTML.
+  [davidjb]
 - Update Bootstrap theme to match existing Bootswatch themes.
   [davidjb]
 - Add ability to sort folders with ``collective.sortmyfolder``.
