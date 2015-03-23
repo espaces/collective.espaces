@@ -6,6 +6,8 @@ Changelog
 
 - Customise user registration and password reset emails with nice HTML.
   [davidjb]
+- Enable local user registration & CAPTCHA the registration form.
+  [davidjb]
 - Update Bootstrap theme to match existing Bootswatch themes.
   [davidjb]
 - Add ability to sort folders with ``collective.sortmyfolder``.

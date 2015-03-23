@@ -38,6 +38,11 @@
     <!-- Folder sorting -->
     <dependency>profile-collective.sortmyfolder:default</dependency>
 
+    <!-- Recaptcha support -->
+    <dependency>profile-plone.formwidget.recaptcha:default</dependency>
+    <dependency>profile-collective.registrationcaptcha:default</dependency>
+
+
     <!-- plone.app.iterate -->
     <!-- plone.app.toolbar -->
     <!-- ftw.quota -->

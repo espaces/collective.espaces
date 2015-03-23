@@ -6,7 +6,7 @@
     <browser:page
         for="plone.app.layout.navigation.interfaces.INavigationRoot"
         name="change-password"
-        class=".views.PasswordAccountPanel"
+        class=".views.PasswordPanel"
         permission="cmf.SetOwnPassword"
         />
     <browser:viewlet

@@ -2,8 +2,8 @@ from five import grok
 from zope.formlib import form
 from collective.aaf.auth import _generatePassword
 from collective.spaces.browser.createform import CreateSpaceForm
-from plone.app.users.browser.personalpreferences \
-        import PasswordAccountPanel as OriginalPasswordAccountPanel
+from plone.app.users.browser.passwordpanel \
+    import PasswordPanel as OriginalPasswordPanel
 from plone.app.layout.viewlets.common import SearchBoxViewlet
 
 
@@ -23,7 +23,7 @@ class CustomSearchBoxViewlet(SearchBoxViewlet):
         self.navigation_root_url = 'https://espaces.edu.au'
 
 
-class PasswordAccountPanel(OriginalPasswordAccountPanel):
+class PasswordPanel(OriginalPasswordPanel):
 
     description = u"Change or regenerate password. If you are logged in" \
                   u" via your institutional account, then you can select to" \
