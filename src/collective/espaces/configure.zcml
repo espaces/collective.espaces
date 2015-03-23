@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
@@ -13,6 +14,12 @@
   <grok:grok package="." />
   <include package=".browser" />
 
+  <cmf:registerDirectory
+      name="skins"
+      directory="skins"
+      recursive="True"
+      />
+
   <genericsetup:registerProfile
       name="default"
       title="collective.espaces"
@@ -20,6 +27,15 @@
       description="Installs the collective.espaces package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+  <genericsetup:upgradeStep
+      source="*"
+      destination="0002"
+      title="Reconfigure portal for skins and install dependencies"
+      description="Reconfigure portal for skins and install dependencies"
+      profile="collective.espaces:default"
+      handler=".upgrades.upgrade_0001_to_0002"
+      />
+
 
   <!-- -*- extra stuff goes here -*- -->
 
