@@ -3,4 +3,8 @@
   <javascript enabled="False" id="popupforms.js"/>
   <javascript enabled="False" id="calendar_formfield.js"/>
   <javascript enabled="False" id="kss-bbb.js"/>
+  <javascript
+     id="++resource++espaces/comments.js"
+     insert-after="++resource++plone.app.discussion.javascripts/comments.js"
+     />
 </object>

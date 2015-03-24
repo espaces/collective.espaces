@@ -12,8 +12,13 @@ def run_import_step(context, step):
 
 
 def upgrade_0001_to_0002(context):
+    # Configre the skins profile
     run_import_step(context, 'skins')
 
+    # Install new dependencies
     qi = getToolByName(context, 'portal_quickinstaller')
     qi.installProduct('plone.formwidget.recaptcha')
     qi.installProduct('collective.registrationcaptcha')
+
+    # Configre the new JS resources
+    run_import_step(context, 'jsregistry')

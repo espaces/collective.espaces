@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Add confirmation for deleting comments.
+  [davidjb]
 - Improve wording of CAPTCHA field failure.
   [davidjb]
 - Customise CAPTCHA interface field title.
