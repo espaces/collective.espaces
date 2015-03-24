@@ -1,0 +1,20 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: plone.formwidget.recaptcha\n"
+"POT-Creation-Date: 2015-03-24 12:00+1000\n"
+"PO-Revision-Date: 2013-10-30 18:45-0300\n"
+"Last-Translator: David Beitey <eresearch@jcu.edu.au>\n"
+"Language-Team: EN <EN@example.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone.formwidget.recaptcha\n"
+
+#: ./validator.py:16
+msgid "The code you entered was wrong, please enter the new one."
+msgstr "Your verification failed.  Ensure that you follow the steps required to confirm your request is not automated."
+

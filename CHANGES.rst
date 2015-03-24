@@ -4,6 +4,10 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Improve wording of CAPTCHA field failure.
+  [davidjb]
+- Customise CAPTCHA interface field title.
+  [davidjb]
 - Customise contact form to be hidden for public users.
   [davidjb]
 - Customise user registration and password reset emails with nice HTML.
