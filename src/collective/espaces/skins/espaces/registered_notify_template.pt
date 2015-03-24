@@ -456,7 +456,7 @@ Precedence: bulk
 <br>
 Your username for your local eSpaces login is <b i18n:name="member" tal:content="python:member.getUserName()">Username</b>.<br>
 <br>
-To learn more about eSpaces, visit us at <a href="https://espaces.edu.au" target="_blank" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-weight: normal;text-decoration: underline;">espaces.edu.au</a>.
+To learn more about eSpaces, visit us at <a href="https://espaces.edu.au" target="_blank" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-weight: normal;text-decoration: underline;">espaces.edu.au</a> and follow us on <a href="https://twitter.com/eSpacesAU" target="_blank" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-weight: normal;text-decoration: underline;">Twitter</a> for all the latest updates.
                         </td>
                     </tr>
                 </tbody></table>
