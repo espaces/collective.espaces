@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Add upgrade for changing plone.app.discussion CAPTCHA settings.
+  [davidjb]
 - Add confirmation for deleting comments.
   [davidjb]
 - Improve wording of CAPTCHA field failure.

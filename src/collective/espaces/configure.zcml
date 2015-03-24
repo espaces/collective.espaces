@@ -35,6 +35,13 @@
       profile="collective.espaces:default"
       handler=".upgrades.upgrade_0001_to_0002"
       />
+  <genericsetup:upgradeStep
+      source="*"
+      destination="0003"
+      title="Reconfigure registry for discussion CAPTCHA"
+      profile="collective.espaces:default"
+      handler=".upgrades.upgrade_0002_to_0003"
+      />
 
 
   <!-- -*- extra stuff goes here -*- -->

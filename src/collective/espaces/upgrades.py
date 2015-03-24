@@ -12,6 +12,8 @@ def run_import_step(context, step):
 
 
 def upgrade_0001_to_0002(context):
+    """ Install recaptcha protection on the site.
+    """
     # Configre the skins profile
     run_import_step(context, 'skins')
 
@@ -22,3 +24,8 @@ def upgrade_0001_to_0002(context):
 
     # Configre the new JS resources
     run_import_step(context, 'jsregistry')
+
+def upgrade_0002_to_0003(context):
+    """ Re-import configuration registry for Discussion options.
+    """
+    run_import_step(context, 'registry')

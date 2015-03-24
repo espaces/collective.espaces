@@ -31,7 +31,7 @@
     <value>False</value>
   </record>
   <record name="plone.app.discussion.interfaces.IDiscussionSettings.captcha">
-    <value>disabled</value>
+    <value>recaptcha</value>
   </record>
   <record name="plone.app.discussion.interfaces.IDiscussionSettings.globally_enabled">
     <value>True</value>
