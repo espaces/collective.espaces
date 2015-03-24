@@ -28,4 +28,4 @@ def upgrade_0001_to_0002(context):
 def upgrade_0002_to_0003(context):
     """ Re-import configuration registry for Discussion options.
     """
-    run_import_step(context, 'registry')
+    run_import_step(context, 'plone.app.registry')
