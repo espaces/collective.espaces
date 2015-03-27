@@ -6,7 +6,7 @@
   <browser:resourceDirectory
       name="espaces"
       directory="static"
-      layer="collective.espaces.browser.interfaces.IThemeSpecific" />
+      />
 
   <plone:static directory="espaces-theme" name="espaces" type="theme" />
 
