@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Customise login template with even more helpful info.
+  [davidjb]
 - Add upgrade for changing plone.app.discussion CAPTCHA settings.
   [davidjb]
 - Add confirmation for deleting comments.
