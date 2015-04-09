@@ -7,12 +7,12 @@
 
   <!-- AJAX: Folder listings -->
   <rules css:if-content="body > #folderlisting-main-table">
-    <xi:include href="++theme++bootstrap-framework/rules/edit.xml"/>
-    <xi:include href="++theme++bootstrap-framework/rules/forms.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/edit.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
   </rules>
   <!-- AJAX: Search page results -->
   <rules css:if-content="body > #updated-search-results-number">
-    <xi:include href="++theme++bootstrap-framework/rules/general.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/general.xml"/>
   </rules>
 
   <!-- The condition makes sure that theme is only applied when served in the 
@@ -20,30 +20,33 @@
        Tiny, for example. -->
   <rules css:if-content="#visual-portal-wrapper">
 
-    <theme href="++theme++bootstrap-framework/examples/starter-template.html" />
+    <theme href="/++theme++bootstrap-framework/examples/starter-template.html" />
 
-    <!-- Head rules
-         ================================================================== -->
-    <xi:include href="++theme++bootswatch/rules/head-base.xml"/>
-
-    <!-- Framework styles -->
+    <!-- Framework styles. Operate before the head-base rules. -->
     <replace css:theme="head link[href*='bootstrap.css']">
         <link href="{$base}/++theme++espaces/css/bootstrap.min.css" rel="stylesheet"/>
     </replace>
+    <replace css:theme="head link[href*='bootstrap-responsive.css']">
+        <link href="{$base}/++theme++espaces/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+    </replace>
+
+    <!-- Head rules
+         ================================================================== -->
+    <xi:include href="/++theme++bootswatch/rules/head-base.xml"/>
 
     <!-- Body rules
          ================================================================== -->
     <!--<xi:include href="++theme++plone/rules/logo/blue-64.xml"/>-->
-    <xi:include href="++theme++bootstrap-framework/rules/header.xml"/>
-    <xi:include href="++theme++bootstrap-framework/rules/grid.xml"/>
-    <xi:include href="++theme++bootstrap-framework/rules/columns.xml"/>
-    <xi:include href="++theme++bootstrap-framework/rules/lead-hero.xml"/>
-    <xi:include href="++theme++bootstrap-framework/rules/content.xml"/>
-    <xi:include href="++theme++bootstrap-framework/rules/forms.xml"/>
-    <xi:include href="++theme++bootstrap-framework/rules/portlets.xml"/>
-    <xi:include href="++theme++bootstrap-framework/rules/edit.xml"/>
-    <xi:include href="++theme++bootstrap-framework/rules/footer-inverse.xml"/>
-    <xi:include href="++theme++bootstrap-framework/rules/general.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/header.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/grid.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/columns.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/lead-hero.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/content.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/forms.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/portlets.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/edit.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/footer-inverse.xml"/>
+    <xi:include href="/++theme++bootstrap-framework/rules/general.xml"/>
 
     <!-- Place the content 
          .................................................................. -->
