@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Update theme to use responsive text in hero units.
+  [davidjb]
 - Ensure we use eSpaces theme for responsive pages.  This fixes text colours
   and other aspects on smaller screens.
   [davidjb]
