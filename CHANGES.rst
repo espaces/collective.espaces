@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Fix installation issue with missing meta_type fields.
+  [davidjb]
 - Update theme to use responsive text in hero units.
   [davidjb]
 - Ensure we use eSpaces theme for responsive pages.  This fixes text colours

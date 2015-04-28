@@ -3,10 +3,10 @@
   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
   <object name="site_actions">
     <!-- Hide the Contact link -->
-    <object name="contact">
+    <object name="contact" meta_type="CMF Action">
       <property name="visible">False</property>
     </object> 
-    <object name="accessibility">
+    <object name="accessibility" meta_type="CMF Action">
       <property name="visible">False</property>
     </object>
     <object name="terms_of_service" meta_type="CMF Action" insert-before="portal_home">
@@ -20,21 +20,21 @@
 
   <!-- Ensure user dashboard is rooted to the navigation root. -->
   <object name="user">
-    <object name="dashboard">
+    <object name="dashboard" meta_type="CMF Action">
       <property
        name="url_expr">string:${globals_view/navigationRootUrl}/dashboard</property>
     </object>
 
     <!-- Hide the Register link -->
-    <object name="join">
+    <object name="join" meta_type="CMF Action">
       <property name="visible">False</property>
     </object>
 
-    <object name="create_space">
+    <object name="create_space" meta_type="CMF Action">
       <property name="title">Create an eSpace</property>
     </object>
 
-    <object name="login">
+    <object name="login" meta_type="CMF Action">
        <property name="url_expr">string:https://espaces.edu.au/login</property>
     </object>
   </object>
