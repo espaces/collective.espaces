@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Change to collective.shibboleth under the hood of collective.aaf.
+  [davidjb]
 - Fix installation issue with missing meta_type fields.
   [davidjb]
 - Update theme to use responsive text in hero units.

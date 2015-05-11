@@ -8,11 +8,13 @@
     category="context"
     key="/"
     manager="collective.pluggablelogin"
-    type="collective.aaf.portlets.ShibbolethLoginPortlet"
+    type="collective.shibboleth.portlets.ShibbolethLoginPortlet"
     insert-before="*"
     visible="True">
-    <property name="wayf_sp_entityID">string:https://espaces.edu.au/shibboleth</property>
-    <property name="wayf_sp_handlerURL">string:https://espaces.edu.au/Shibboleth.sso</property>
+    <property name="sp_handlerURL">string:https://espaces.edu.au/Shibboleth.sso</property>
+    <property name="eds_helpURL">string:https://www.espaces.edu.au/help</property>
+    <property name="eds_defaultLogoWidth">90</property>
+    <property name="eds_defaultLogoHeight">80</property>
  </assignment>
 
 </portlets>

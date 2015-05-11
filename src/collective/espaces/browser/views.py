@@ -1,6 +1,6 @@
 from five import grok
 from zope.formlib import form
-from collective.aaf.auth import _generatePassword
+from collective.shibboleth.auth import _generatePassword
 from collective.spaces.browser.createform import CreateSpaceForm
 from plone.app.users.browser.passwordpanel \
     import PasswordPanel as OriginalPasswordPanel
