@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <site>
  <property name="title">eSpaces - Online Collaborative Workspaces</property>
- <property name="description">eSpaces is a free web-based collaboration platform for Australian researchers and groups.  Start sharing files and collaborating with colleagues across institutions quickly and securely. Configure your eSpace as you'd like it: choose a theme, make it public or private, and make it yours. Escape to your eSpace.</property>
+ <property name="description">eSpaces is a free web-based collaboration platform for researchers and groups.  Start sharing files and collaborating with colleagues across institutions quickly and securely. Configure your eSpace as you'd like it: choose a theme, make it public or private, and make it yours. Escape to your eSpace.</property>
  <property name="email_from_address"
    type="string">admin@espaces.edu.au</property>
  <property name="email_from_name"

@@ -452,7 +452,7 @@ Precedence: bulk
 
                         <td class="mcnTextContent" style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-family: Helvetica;font-size: 16px;line-height: 200%;text-align: left;" valign="top">
 
-                            Thanks for creating an account on <strong>eSpaces</strong>, the open collaboration portal for Australian research!&nbsp; Either you've just signed up for an account, or a colleague wants to collaborate and has created an account for you.<br>
+                            Thanks for creating an account on <strong>eSpaces</strong>, the open collaboration portal for your research!&nbsp; Either you've just signed up for an account, or a colleague wants to collaborate and has created an account for you.<br>
 <br>
 Your username for your local eSpaces login is <b i18n:name="member" tal:content="python:member.getUserName()">Username</b>.<br>
 <br>
@@ -477,7 +477,7 @@ To learn more about eSpaces, visit us at <a href="https://espaces.edu.au" target
                             <table style="border: 1px solid #FFFFFF;background-color: #7CB7D9;border-collapse: collapse;table-layout: fixed;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContentContainer" cellpadding="18" cellspacing="0" width="100%" border="0">
                                 <tbody><tr>
                                     <td style="color: #FFFFFF;font-family: Arial,&quot;helvetica neue&quot: ;,helvetica,sans-serif: ;font-size: 14px;line-height: 200%;text-align: left;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" class="mcnTextContent" valign="top">
-                                        If you already have a login and password for an Australian tertiary institution (or certain research organisations), you can use these details to <a href="https://espaces.edu.au/login" target="_blank" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-weight: normal;text-decoration: underline;">login</a> to eSpaces automatically. You don't need a separate account.
+                                        If you already have a login and password from a tertiary institution or research organisation in Australia or New Zealand, you can use these details to <a href="https://espaces.edu.au/login" target="_blank" style="word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-weight: normal;text-decoration: underline;">login</a> to eSpaces automatically. You don't need a separate account.
                                     </td>
                                 </tr>
                             </tbody></table>

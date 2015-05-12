@@ -24,7 +24,7 @@
                 <p>
                     <strong>Heads up!</strong> If you are associated with a supported university or research institution, you don't need to register.  Just use the <a href="" tal:attributes="href string:${context/@@plone_portal_state/navigation_root_url}/login;"><strong>institutional login</strong></a> and choose your organisation from the list.
                 </p>
-                <p>Institutional login supports most universities and research organisations from Australia and New Zealand.</p>
+                <p>Institutional login currently supports most universities and research organisations from Australia and New Zealand.</p>
             </div>
 
             <div id="content-core">
