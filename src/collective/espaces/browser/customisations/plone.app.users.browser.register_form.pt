@@ -22,9 +22,9 @@
             <p class="documentDescription">Welcome to eSpaces, the open collaboration platform for research.</p>
             <div class="alert alert-info" role="alert">
                 <p>
-                    <strong>Heads up!</strong> If you are associated with an Australian university or research institution, you don't need to register.  Just use the <a href="" tal:attributes="href string:${context/@@plone_portal_state/navigation_root_url}/login;"><strong>institutional login</strong></a> and choose your organisation from the list.
+                    <strong>Heads up!</strong> If you are associated with a supported university or research institution, you don't need to register.  Just use the <a href="" tal:attributes="href string:${context/@@plone_portal_state/navigation_root_url}/login;"><strong>institutional login</strong></a> and choose your organisation from the list.
                 </p>
-                <p>Institutional login is powered by the <a href="http://aaf.edu.au">Australian Access Federation (AAF)</a> and you login using your normal computer credentials for your organisation.</p>
+                <p>Institutional login supports most universities and research organisations from Australia and New Zealand.</p>
             </div>
 
             <div id="content-core">

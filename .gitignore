@@ -11,6 +11,7 @@
 *.swp
 *.wpr
 .*.cfg
+.eggs
 .installed.cfg
 .mr.developer.cfg
 .hg/
@@ -30,7 +31,8 @@ local/
 parts/
 dist/
 var/
-
+src/collective.aaf
+src/collective.shibboleth
 
 
 # OSX

@@ -25,7 +25,16 @@ def upgrade_0001_to_0002(context):
     # Configre the new JS resources
     run_import_step(context, 'jsregistry')
 
+
 def upgrade_0002_to_0003(context):
     """ Re-import configuration registry for Discussion options.
     """
     run_import_step(context, 'plone.app.registry')
+
+
+def upgrade_0003_to_0004(context):
+    """ Upgrade dependencies and reconfigure portlets.
+    """
+    qi = getToolByName(context, 'portal_quickinstaller')
+    qi.upgradeProduct('collective.aaf')
+    run_import_step(context, 'portlets')

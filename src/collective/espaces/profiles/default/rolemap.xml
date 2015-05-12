@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rolemap>
   <permissions>
-    <!-- Ensure only AAF users can create Spaces -->
+    <!-- Ensure only Insitutional users can create Spaces -->
     <permission name="collective.spaces: Create Space via web" acquire="False">
       <role name="Shibboleth Authenticated"/>
       <role name="Manager"/>

@@ -16,13 +16,13 @@ Features
 
 * Self-creation of eSpaces (powered by `collective.spaces`)
 
-  * Users must be authenticated via Shibboleth (AAF) to be able to create
-    their own Spaces. This is protected by a special Plone security
-    role that this policy product assigns to "AAF Authenticated" users.
-  * Any user with an AAF account is able to create a Space.
+  * Users must be authenticated via Shibboleth to be able to create
+    their own eSpaces. This is protected by a special Plone security
+    role that this policy product assigns to "Shibboleth Authenticated" users.
+  * Any user with a valid Institutional account is able to create an eSpace.
   * File quotas are limited to 300MB per file, and 20MB per image.
   * Ability to associate a custom URL with your space, or the ability
-    to have your own *.espaces.edu.au domain.
+    to have your own ``*.espaces.edu.au`` domain.
   * Customisable theme per-Space (via Diazo and plone.app.theming)
 
 * Flexible management and customisation
@@ -35,9 +35,9 @@ Features
     
 * Flexible authentication
 
-  * Login via Shibboleth and the Australian Access Federation (AAF) for
-    researchers and collaborators.
-  * Self-registration enabled for non-AAF users.
+  * Login via Shibboleth Institutional login for researchers and
+    collaborators.
+  * Self-registration enabled for non-Institutional users.
 
 * User-selectable theming
 

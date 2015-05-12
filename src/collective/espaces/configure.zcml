@@ -42,6 +42,13 @@
       profile="collective.espaces:default"
       handler=".upgrades.upgrade_0002_to_0003"
       />
+  <genericsetup:upgradeStep
+      source="*"
+      destination="0004"
+      title="Reconfigure shibboleth portlet"
+      profile="collective.espaces:default"
+      handler=".upgrades.upgrade_0003_to_0004"
+      />
 
 
   <!-- -*- extra stuff goes here -*- -->

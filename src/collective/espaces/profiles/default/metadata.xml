@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <metadata>
-  <version>0003</version>
+  <version>0004</version>
   <description>Installs the settings for an eSpaces portal.</description>
   <dependencies>
 
@@ -34,6 +34,7 @@
 
     <!-- Shibboleth authentication -->
     <dependency>profile-collective.aaf:default</dependency>
+    <dependency>profile-collective.shibboleth:default</dependency>
 
     <!-- Folder sorting -->
     <dependency>profile-collective.sortmyfolder:default</dependency>

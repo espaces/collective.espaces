@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Allow for more federations to login than just the AAF.
+  [davidjb]
 - Change to collective.shibboleth under the hood of collective.aaf.
   [davidjb]
 - Fix installation issue with missing meta_type fields.
