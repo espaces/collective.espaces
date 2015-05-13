@@ -38,3 +38,7 @@ def upgrade_0003_to_0004(context):
     qi = getToolByName(context, 'portal_quickinstaller')
     qi.upgradeProduct('collective.aaf')
     run_import_step(context, 'portlets')
+
+    # Change language
+    ltool = getToolByName(context, 'portal_languages')
+    ltool.setDefaultLanguage('en-au')

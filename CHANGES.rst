@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Set default language as EN-AU.
+  [davidjb]
 - Allow for more federations to login than just the AAF.
   [davidjb]
 - Change to collective.shibboleth under the hood of collective.aaf.

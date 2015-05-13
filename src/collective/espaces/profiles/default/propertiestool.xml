@@ -14,6 +14,7 @@
     <property name="verify_login_name">True</property>
     <property name="enable_sitemap">True</property>
     <property name="webstats_js"></property>
+    <property name="default_language" type="string">en-au</property>
   </object>
 
   <!-- Navigation settings -->
