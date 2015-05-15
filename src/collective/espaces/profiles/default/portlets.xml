@@ -12,9 +12,11 @@
     insert-before="*"
     visible="True">
     <property name="sp_handlerURL">string:https://espaces.edu.au/Shibboleth.sso</property>
+    <property name="eds_defaultLogo">string:${context/@@plone_portal_state/navigation_root_url}/++resource++espaces/home-icon.png</property>
     <property name="eds_helpURL">string:https://www.espaces.edu.au/help</property>
     <property name="eds_defaultLogoWidth">90</property>
     <property name="eds_defaultLogoHeight">80</property>
+    <property name="eds_showListFirst">True</property>
  </assignment>
 
 </portlets>
