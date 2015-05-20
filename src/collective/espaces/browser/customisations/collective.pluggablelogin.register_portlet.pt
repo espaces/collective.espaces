@@ -1,6 +1,6 @@
 <div class="alert alert-info" role="alert">
     <p>
-        <strong>Heads up!</strong> If you have an account with a university or research organisation in Australia or New Zealand, you don't need to register. Just use the <a class="label label-info">Institutional Login</a> above.
+        <strong>Heads up!</strong> If you have an account with a university or research organisation in Australia or New Zealand, you don't need to register. Just use the <a href="#" class="label label-info accordion-link">Institutional Login</a> above.
     </p>
 </div>
 <tal:register define="is_formlib view/is_formlib;
