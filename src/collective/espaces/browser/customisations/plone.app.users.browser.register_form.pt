@@ -35,6 +35,12 @@
                            type="hidden"
                            name="came_from"
                            tal:attributes="value came_from" />
+                    <br />
+                    <div class="alert alert-warning" role="alert">
+                        With your newly registered account, remember to use
+                        <strong>Local Login</strong> when you're returning
+                        and logging into eSpaces.
+                    </div>
                   </metal:bottom>
                 </metal:block>
             </div>

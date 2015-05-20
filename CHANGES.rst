@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Customise register portlet and register form.
+  [davidjb]
 - Set default language as EN-AU.
   [davidjb]
 - Allow for more federations to login than just the AAF.
