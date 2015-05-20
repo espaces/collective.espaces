@@ -28,7 +28,7 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <genericsetup:upgradeStep
-      source="*"
+      source="0001"
       destination="0002"
       title="Reconfigure portal for skins and install dependencies"
       description="Reconfigure portal for skins and install dependencies"
@@ -36,14 +36,14 @@
       handler=".upgrades.upgrade_0001_to_0002"
       />
   <genericsetup:upgradeStep
-      source="*"
+      source="0002"
       destination="0003"
       title="Reconfigure registry for discussion CAPTCHA"
       profile="collective.espaces:default"
       handler=".upgrades.upgrade_0002_to_0003"
       />
   <genericsetup:upgradeStep
-      source="*"
+      source="0003"
       destination="0004"
       title="Reconfigure shibboleth portlet"
       profile="collective.espaces:default"
