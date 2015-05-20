@@ -46,7 +46,7 @@
                 margin-bottom: 0;
             }
         </style>
-        <h3>Powered by:</h3>
+        <h3>Powered by</h3>
         <ul class="inline">
             <li>
                 <a href="https://aaf.edu.au" target="_blank">
@@ -68,9 +68,8 @@
         <br>
         <div class="alert alert-info">
             <small>
-                If your organisation or institution is part of one of
-                the federations shown, you can log in with your existing
-                account.
+                If your institution is part of one of the federations
+                shown, you can log in with your existing account.
             </small>
         </div>
     </dd>

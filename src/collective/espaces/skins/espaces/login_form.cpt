@@ -41,8 +41,7 @@
 	<h1 class="documentFirstHeading">Log in</h1>
 
     <div class="alert alert-info">
-        <p>Select your account type to log in. If you don't have an existing university or research organisation account, you can register for a local eSpaces account.</p>
-        <p><a href="https://www.espaces.edu.au/help/">Need help logging in?</a></p>
+        <p>Select your account type. If you don't have an existing university or research account, choose <a class="label label-info">Local Login</a>, or you can <a class="label label-success">Register</a>. <a href="https://www.espaces.edu.au/help/">Need more help?</a>
     </div>
 
 	<div class="login-portlet-wrapper">
