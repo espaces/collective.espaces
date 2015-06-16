@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Add expiration details to email template for new users.
+  [davidjb]
 - Customise register portlet and register form.
   [davidjb]
 - Set default language as EN-AU.

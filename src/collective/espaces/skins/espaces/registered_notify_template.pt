@@ -522,6 +522,24 @@ To learn more about eSpaces, visit us at <a href="https://espaces.edu.au" target
             </td>
         </tr>
     </tbody>
+</table><table class="mcnTextBlock" cellpadding="0" cellspacing="0" width="100%" border="0" style="border-collapse: collapse;table-layout: fixed;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class="mcnTextBlockOuter">
+        <tr>
+            <td class="mcnTextBlockInner" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                <table class="mcnTextContentContainer" cellpadding="0" cellspacing="0" width="600" align="left" border="0" style="border-collapse: collapse;table-layout: fixed;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+
+                        <td class="mcnTextContent" style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #FFFFFF;font-family: Helvetica;font-size: 16px;line-height: 200%;text-align: left;" valign="top">
+
+                            If you've run out of time, you can restart the activation process by <a href="mail_password_form" tal:attributes="href string:${portal_state/portal_url}/mail_password_form?userid=${member/getUserName}">resetting your password</a>.
+                        </td>
+                    </tr>
+                </tbody></table>
+
+            </td>
+        </tr>
+    </tbody>
 </table></td>
                                                                             </tr>
                                                                         </table>
