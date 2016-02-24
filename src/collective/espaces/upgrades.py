@@ -45,6 +45,7 @@ def upgrade_0003_to_0004(context):
 
 
 def upgrade_0004_to_0005(context):
-    """ Upgrade language configuration
+    """ Upgrade language configuration and syndication settings.
     """
     run_import_step(context, 'languagetool')
+    run_import_step(context, 'plone.app.registry')

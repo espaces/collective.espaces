@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Set syndication settings.
+  [davidjb]
 - Add all languages to portal_languages and add request negotiation.
   [davidjb]
 - Add expiration details to email template for new users.

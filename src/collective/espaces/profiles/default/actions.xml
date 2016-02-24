@@ -55,4 +55,11 @@
     </object>
   </object>
 
+  <!-- Syndication -->
+  <object name="object">
+    <object name="syndication" meta_type="CMF Action">
+     <property name="visible">True</property>
+    </object>
+  </object>
+
 </object>

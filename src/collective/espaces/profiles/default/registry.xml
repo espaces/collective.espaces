@@ -63,4 +63,12 @@
     <value>20</value>
   </record>
 
+  <!-- Syndication -->
+  <record name="Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.allowed">
+    <value>True</value>
+  </record>
+  <record name="Products.CMFPlone.interfaces.syndication.ISiteSyndicationSettings.show_syndication_button">
+    <value>True</value>
+  </record>
+
 </registry>
