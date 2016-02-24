@@ -42,3 +42,9 @@ def upgrade_0003_to_0004(context):
     # Change language
     ltool = getToolByName(context, 'portal_languages')
     ltool.setDefaultLanguage('en-au')
+
+
+def upgrade_0004_to_0005(context):
+    """ Upgrade language configuration
+    """
+    run_import_step(context, 'languagetool')

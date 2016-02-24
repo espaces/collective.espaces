@@ -4,6 +4,8 @@ Changelog
 0.1-dev (unreleased)
 --------------------
 
+- Add all languages to portal_languages and add request negotiation.
+  [davidjb]
 - Add expiration details to email template for new users.
   [davidjb]
 - Customise register portlet and register form.

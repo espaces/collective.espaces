@@ -49,6 +49,13 @@
       profile="collective.espaces:default"
       handler=".upgrades.upgrade_0003_to_0004"
       />
+  <genericsetup:upgradeStep
+      source="0004"
+      destination="0005"
+      title="Reconfigure language settings"
+      profile="collective.espaces:default"
+      handler=".upgrades.upgrade_0004_to_0005"
+      />
 
 
   <!-- -*- extra stuff goes here -*- -->
