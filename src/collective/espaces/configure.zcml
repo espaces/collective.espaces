@@ -52,7 +52,7 @@
   <genericsetup:upgradeStep
       source="0004"
       destination="0005"
-      title="Reconfigure language settings"
+      title="Reconfigure language settings and syndication button"
       profile="collective.espaces:default"
       handler=".upgrades.upgrade_0004_to_0005"
       />

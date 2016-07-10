@@ -49,3 +49,4 @@ def upgrade_0004_to_0005(context):
     """
     run_import_step(context, 'languagetool')
     run_import_step(context, 'plone.app.registry')
+    run_import_step(context, 'actions')
